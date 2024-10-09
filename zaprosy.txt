@@ -1,0 +1,7 @@
+SELECT 
+    `Animal`.`Poroda`, `Animal`.`View`, `Eat`.`eatname`
+FROM
+    `Animal`, `med`.`Eat`, `med`.`Animal_has_Eat`
+WHERE
+    `Animal_has_Eat`.`Eat_#eat` = `Eat`.`#eat` and `med`.`Animal_has_Eat`.`Animal_#Animal` = `Animal`.`#Animal` 
+       

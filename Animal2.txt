@@ -1,0 +1,17 @@
+SELECT `Animal`.`Poroda`, 
+`Animal`.`View`	
+FROM `Animal`
+WHERE
+`Animal`.`View`= 'Кот';
+
+SELECT `Animal_has_Eat`.`Animal_#Animal`,
+`Animal_has_Eat`.`Eat_#eat`
+FROM `Animal_has_Eat`
+WHERE
+`Animal_has_Eat`.`Eat_#eat`= '3';
+
+SELECT `Est eat`.`Est`,
+`Est eat`.`Eat_#eat`
+FROM `Est eat`
+WHERE 
+`Est eat`.`Est`= 'КормПром'
